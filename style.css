@@ -1,0 +1,326 @@
+h1 {
+    color: red;
+    text-shadow: 4px 4px 5px rgb(70, 13, 13);
+    text-align: center;
+}
+
+
+.title {
+    color: rgb(40, 42, 207);
+}
+
+
+
+#italic {
+    color: orange;
+}
+
+
+
+.container {
+    border: 5px dotted grey;
+    margin: 50px 20px 50px 30px;
+    padding: 10px 20px 15px 11px;
+}
+
+
+.box {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+                        
+
+nav {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style: none;
+}               
+
+
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+
+
+
+.nav-wrapper {
+    background-color: blue;
+}
+   
+
+
+
+.circle-img {
+    border-radius: 50%;
+}
+
+img {
+    box-shadow: 8px 8px 10px 0px rgb(128, 128, 128) inset;
+}
+
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    margin: 30px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+
+    
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotation {
+0% {transform: rotate(90deg);}
+50% {transform: rotate(180deg);}
+100% {transform: rotate(360deg);}
+}
+
+
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, blue, orange, yellow, pink, blue);
+}
+
+
+
+@keyframes getbigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(.5);}
+}
+
+
+ 
+
+
+#box3 {
+    animation: getbigger infinite 8s ease-in;
+    border-radius: 50%;
+    background: orange;
+}
+
+
+
+@keyframes changecolor {
+    0% {background-color: grey;}
+    25% {background-color: purple;}
+    50% {background-color: yellow;}
+    75% {background-color: pink;}
+    100% {background-color: red;}
+}
+
+
+
+#box4 {
+    animation: changecolor 3s 2s forwards;
+    
+}
+
+
+
+@keyframes movebox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;} 
+    50% {left: 100px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
+
+
+
+#box5 {
+    animation: movebox 5s 3s;
+    background: green;
+    position: relative;
+}
+
+
+
+
+
+#box6 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background: purple;
+}
+
+
+
+/*html {
+   background-image: radial-gradient(blue, green, purple);
+} */
+
+
+
+form input, textarea, button {
+    display: block;
+    margin: 30px;
+
+}
+
+
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.row {
+    margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 19.5% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #fff;
+    color: #444;
+  }
+
+  .Box {
+    background-color: white;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+  }
+
+  .a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+  .b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  .c {
+    grid-column: col / span 5 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(green, blue,red,yellow);
+  }
+
+
+
+
+  .d {
+    grid-column: col  / span  3;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  
+  
+  
+  .e {
+    grid-column: col 3 / span  3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+  .f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(yellow,red,blue,green);
+  }
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
